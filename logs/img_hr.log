@@ -1,0 +1,598 @@
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:144 - Inizializing DBManager...
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-09-25 11:22:14 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-09-25 11:22:15 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-09-25 11:22:15 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [56]
+2017-09-25 11:22:49 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [4]
+2017-09-25 11:22:50 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [971]
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:144 - Inizializing DBManager...
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-09-25 11:25:47 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-09-25 11:25:48 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-09-25 11:25:48 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [172]
+2017-09-25 11:25:51 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [5]
+2017-09-25 11:25:52 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1060]
+2017-09-25 11:26:57 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:144 - Inizializing DBManager...
+2017-09-25 11:26:57 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-09-25 11:26:57 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [16]
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Inizializing DBManager...
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-09-25 11:31:25 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [33]
+2017-09-25 11:31:30 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [3]
+2017-09-25 11:31:31 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [393]
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Inizializing DBManager...
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-09-28 16:20:59 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-09-28 16:21:00 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-09-28 16:21:00 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [41]
+2017-09-28 16:21:17 [main] ERROR sgs.util.replicateTableRows.DBManager:275 - Errors occurred while performing SQL related operations
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Inizializing DBManager...
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-09-28 16:27:40 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-09-28 16:27:41 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-09-28 16:27:41 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [76]
+2017-09-28 16:27:46 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [5]
+2017-09-28 17:06:39 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [2333650]
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Inizializing DBManager...
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-10-19 15:49:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-10-19 15:49:30 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-19 15:49:30 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [59]
+2017-10-19 15:50:17 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [6]
+2017-10-19 15:50:21 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [4094]
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-10-20 12:24:18 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-10-20 12:24:19 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-20 12:24:20 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [184]
+2017-10-20 12:24:57 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [25836]
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-10-23 13:14:50 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-10-23 13:14:51 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 13:14:51 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [70]
+2017-10-23 13:15:02 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [2706]
+2017-10-23 13:30:01 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 13:30:01 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 13:30:01 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [24]
+2017-10-23 13:31:06 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [54546]
+2017-10-23 14:45:31 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 14:45:32 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 14:45:32 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [36]
+2017-10-23 14:45:44 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [3567]
+2017-10-23 14:45:59 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 14:45:59 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 14:45:59 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [10]
+2017-10-23 14:47:45 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [92476]
+2017-10-23 14:49:30 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 14:49:30 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 14:49:30 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [14]
+2017-10-23 14:49:39 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [4881]
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 16:48:12 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [78]
+2017-10-23 16:50:03 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [100699]
+2017-10-23 17:01:44 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 17:01:44 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 17:01:44 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [18]
+2017-10-23 17:01:53 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [5081]
+2017-10-23 17:02:15 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 17:02:15 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 17:02:15 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [11]
+2017-10-23 17:02:45 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [21383]
+2017-10-23 17:03:41 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 17:03:41 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 17:03:42 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [22]
+2017-10-23 17:03:46 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1962]
+2017-10-23 17:04:17 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 17:04:17 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 17:04:17 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [11]
+2017-10-23 17:06:12 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [102994]
+2017-10-23 17:08:32 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-23 17:08:32 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-23 17:08:32 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-23 17:08:44 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [5709]
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-10-24 08:34:53 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-10-24 08:34:54 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:34:55 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [419]
+2017-10-24 08:36:03 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [56539]
+2017-10-24 08:36:37 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:36:37 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:36:37 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [90]
+2017-10-24 08:36:49 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [3780]
+2017-10-24 08:37:19 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:37:19 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:37:19 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [16]
+2017-10-24 08:39:25 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [112123]
+2017-10-24 08:40:03 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:40:03 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:40:03 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [14]
+2017-10-24 08:40:17 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [5832]
+2017-10-24 08:40:36 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:40:36 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:40:36 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-24 08:42:21 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [97722]
+2017-10-24 08:42:37 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:42:37 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:42:37 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-24 08:42:50 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [6846]
+2017-10-24 08:43:04 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 08:43:04 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 08:43:04 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [16]
+2017-10-24 08:43:41 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [27880]
+2017-10-24 09:03:19 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:03:20 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:03:20 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [167]
+2017-10-24 09:03:29 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1966]
+2017-10-24 09:03:45 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:03:45 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:03:45 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [16]
+2017-10-24 09:04:13 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [22233]
+2017-10-24 09:04:32 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:04:32 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:04:32 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [16]
+2017-10-24 09:04:39 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1386]
+2017-10-24 09:04:56 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:04:56 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:04:56 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-24 09:06:50 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [102926]
+2017-10-24 09:07:33 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:07:34 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:07:34 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-24 09:07:44 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [5738]
+2017-10-24 09:08:01 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:08:01 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:08:01 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [14]
+2017-10-24 09:08:32 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [24187]
+2017-10-24 09:09:00 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:09:00 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:09:00 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [18]
+2017-10-24 09:09:06 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1706]
+2017-10-24 09:09:21 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:09:21 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:09:21 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [18]
+2017-10-24 09:09:51 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [24095]
+2017-10-24 09:10:22 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:10:22 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:10:22 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [11]
+2017-10-24 09:10:30 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1623]
+2017-10-24 09:10:42 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:10:42 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:10:42 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [13]
+2017-10-24 09:12:26 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [94616]
+2017-10-24 09:12:42 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:12:42 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:12:42 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [11]
+2017-10-24 09:12:54 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [5395]
+2017-10-24 09:13:08 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:13:08 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:13:08 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [14]
+2017-10-24 09:13:38 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [23837]
+2017-10-24 09:14:23 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:14:23 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:14:23 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [8]
+2017-10-24 09:14:31 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1545]
+2017-10-24 09:14:45 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:14:45 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:14:45 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [12]
+2017-10-24 09:15:15 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [24365]
+2017-10-24 09:15:41 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:15:41 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:15:41 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [14]
+2017-10-24 09:15:48 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1955]
+2017-10-24 09:16:05 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:16:05 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:16:05 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [19]
+2017-10-24 09:17:05 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [49230]
+2017-10-24 09:17:43 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:17:43 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:17:43 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-24 09:17:51 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [2780]
+2017-10-24 09:18:06 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:18:06 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:18:06 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [15]
+2017-10-24 09:18:34 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [22807]
+2017-10-24 09:18:50 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:18:50 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:18:50 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [17]
+2017-10-24 09:18:56 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1570]
+2017-10-24 09:19:08 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:19:08 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:19:09 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [16]
+2017-10-24 09:19:37 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [23333]
+2017-10-24 09:19:49 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:19:49 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:19:49 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [12]
+2017-10-24 09:19:56 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [1457]
+2017-10-24 09:20:11 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:20:11 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:20:12 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [23]
+2017-10-24 09:22:10 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [103898]
+2017-10-24 09:22:32 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:22:32 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:22:33 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [37]
+2017-10-24 09:22:45 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [6460]
+2017-10-24 09:23:05 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:23:05 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:23:05 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [12]
+2017-10-24 09:24:49 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [94019]
+2017-10-24 09:25:15 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-10-24 09:25:16 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-10-24 09:25:16 [main] INFO  sgs.util.replicateTableRows.DBManager:187 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?, execution time is [12]
+2017-10-24 09:25:23 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [5176]
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-11-13 16:28:29 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-11-13 16:28:30 [main] ERROR sgs.util.replicateTableRows.DBManager:85 - ORA-28001: the password has expired
+
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-11-13 16:29:49 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-11-13 16:29:50 [main] ERROR sgs.util.replicateTableRows.DBManager:85 - ORA-28001: the password has expired
+
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/bin/getReplicateRowsQueries.xml correctly loaded
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2017-11-13 16:33:02 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [57]
+2017-11-13 16:33:23 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [5]
+2017-11-13 17:16:39 [main] INFO  sgs.util.replicateTableRows.DBManager:269 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [2595745]
+2018-02-09 14:51:10 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2018-02-09 14:51:10 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2018-02-09 14:51:11 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2018-02-09 14:51:11 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2018-02-09 14:51:11 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2018-02-09 14:51:11 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2018-02-09 14:51:11 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/target/classes/getReplicateRowsQueries.xml correctly loaded
+2018-02-09 14:51:11 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2018-02-09 14:51:11 [main] ERROR sgs.util.replicateTableRows.DBManager:85 - ORA-01017: invalid username/password; logon denied
+
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.ReplicateTableRows:142 - Executing initialization operations ...
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.DBManager:51 - Loading query file [getReplicateRowsQueries.xml]
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_02]
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_01]
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [INSERT_01]
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.QueryManager:69 - Adding query to in-memory map [SELECT_03]
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.QueryManager:72 - Query file file:/D:/eclipse/Workspaces/ReplicateIMG_HRRows/target/classes/getReplicateRowsQueries.xml correctly loaded
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.QueryManager:74 - All query files correctly loaded
+2018-02-09 14:52:57 [main] INFO  sgs.util.replicateTableRows.DBManager:80 - Successfully retrieved database connection to Oracle DB jdbc:oracle:thin:@ract2-scan.servizi:1521/EE000
+2018-02-09 14:52:58 [main] INFO  sgs.util.replicateTableRows.DBManager:149 - Executed query: SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR), execution time is [298]
+2018-02-09 14:53:17 [main] INFO  sgs.util.replicateTableRows.DBManager:113 - Executed query: SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR, execution time is [5]
+2018-02-09 14:53:18 [main] INFO  sgs.util.replicateTableRows.DBManager:270 - Executed query: INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE, STATO_INVIO_CONS)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), execution time is [314]

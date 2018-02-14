@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="SELECT_01">
+    <![CDATA[
+    	SELECT MAX(ID) AS MAX_ID
+    	FROM EE000.IMG_HR
+    ]]>
+	</entry>
+	
+	<entry key="SELECT_02">
+    <![CDATA[
+    	SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = (SELECT MAX(ID) FROM EE000.IMG_HR)
+    ]]>
+	</entry>
+	
+	<entry key="SELECT_03">
+    <![CDATA[
+    	SELECT *
+    	FROM EE000.IMG_HR
+    	WHERE ID = ?
+    ]]>
+	</entry>
+	
+	<entry key="INSERT_01">
+    <![CDATA[
+    	INSERT INTO EE000.IMG_HR (ID, ISTITUTO, ABI, CAB, ASSEGNO, CRA, STATO_FIRMA,
+    	STATO_INVIO_DOC, PDF, TIMESTAMP_INS, PGM_INS, USER_INS, TIPO_ASSEGNO,
+    	F_CONFORME, TIMESTAMP_AGG_FIR, TIMESTAMP_AGG_INV, TERZA_IMMAGINE, STATO_INVIO_CONS)
+    	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ]]>
+	</entry>
+</properties>
